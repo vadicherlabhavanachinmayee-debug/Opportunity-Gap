@@ -1,0 +1,229 @@
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px;
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(139, 32, 255, 0.13), transparent 40%),
+    radial-gradient(ellipse at 85% 80%, rgba(0, 229, 255, 0.07), transparent 40%),
+    #08060e;
+  font-family: inherit;
+}
+
+/* AUTH CARD */
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 42px;
+  background: linear-gradient(145deg, #191426, #100e18);
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  border-radius: 20px;
+  box-shadow:
+    0 0 35px rgba(139, 32, 255, 0.13),
+    0 20px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 35px;
+  right: 35px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #a855f7,
+    #00e5ff,
+    transparent
+  );
+}
+
+/* BRANDING */
+
+.auth-brand {
+  text-align: center;
+  font-size: 29px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.13);
+}
+
+.auth-brand span {
+  color: #ffffff;
+}
+
+/* HEADING */
+
+.auth-heading {
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.auth-eyebrow {
+  color: #00e5ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.auth-heading h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.auth-heading > p:last-child {
+  color: #aaa3bb;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* LOGIN / REGISTER TABS */
+
+.auth-tabs {
+  display: flex;
+  padding: 5px;
+  background: #0d0b14;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #aaa3bb;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  margin: 0;
+}
+
+.auth-tabs button.selected {
+  background: linear-gradient(110deg, #8b20ff, #c026d3);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0 13px rgba(168, 85, 247, 0.25);
+}
+
+/* FORM FIELDS */
+
+.auth-field {
+  margin-bottom: 19px;
+}
+
+.auth-field label {
+  display: block;
+  color: #d4c9e5;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.auth-field input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  background: #0d0b14 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 9px;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  color-scheme: dark;
+}
+
+.auth-field input::placeholder {
+  color: #777083;
+  opacity: 1;
+}
+
+.auth-field input:focus {
+  background: #110e1b !important;
+  border-color: #a855f7;
+  box-shadow:
+    0 0 0 3px rgba(168, 85, 247, 0.12),
+    0 0 13px rgba(168, 85, 247, 0.1);
+}
+
+/* SUBMIT BUTTON */
+
+.auth-submit {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  background: linear-gradient(110deg, #8b20ff, #c026d3);
+  color: white;
+  font-size: 15px;
+  font-weight: 750;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 0 17px rgba(168, 85, 247, 0.23);
+  transition: all 0.2s ease;
+}
+
+.auth-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(192, 38, 211, 0.4);
+}
+
+.auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* FEEDBACK */
+
+.auth-error,
+.auth-success {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.auth-error {
+  color: #ff789d;
+}
+
+.auth-success {
+  color: #39ff9c;
+}
+
+.auth-footer {
+  text-align: center;
+  color: #827b91;
+  font-size: 12px;
+  margin-top: 27px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 22px;
+  }
+
+  .auth-brand {
+    font-size: 25px;
+  }
+
+  .auth-heading h1 {
+    font-size: 24px;
+  }
+}

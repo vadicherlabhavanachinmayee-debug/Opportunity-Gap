@@ -1,0 +1,386 @@
+
+.analyzer-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-bottom: 35px;
+  color: #f5f3ff;
+}
+
+/* HEADER */
+
+.analyzer-header {
+  margin-bottom: 25px;
+}
+
+.analyzer-header h1 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.analyzer-header > p:last-child {
+  color: #aaa3bb;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* NOTICE */
+
+.analyzer-notice {
+  background: rgba(255, 190, 70, 0.08);
+  color: #ffd27a;
+  border: 1px solid rgba(255, 190, 70, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* MAIN PANELS */
+
+.analyzer-job-card,
+.analyzer-check-card,
+.analysis-results {
+  background: linear-gradient(145deg, #171322, #100e18);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.06);
+}
+
+/* SELECTED OPPORTUNITY */
+
+.analyzer-job-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.analyzer-tag {
+  display: inline-block;
+  color: #00e5ff;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.analyzer-job-card h2 {
+  color: #ffffff;
+  font-size: 21px;
+  margin: 16px 0 5px;
+}
+
+.analyzer-job-card p {
+  color: #aaa3bb;
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.analyzer-job-card .qualification {
+  color: #c58cff;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.job-symbol {
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  color: #c58cff;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+/* PROFILE AND DOCUMENT CHECK */
+
+.analyzer-check-card h2,
+.analysis-results h2 {
+  color: #ffffff;
+  margin-top: 0;
+  font-weight: 750;
+}
+
+.analyzer-muted {
+  color: #aaa3bb;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.analyzer-profile {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin: 22px 0 28px;
+}
+
+.analyzer-profile div {
+  background: #100e18;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 0;
+}
+
+.analyzer-profile span,
+.analyzer-profile strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.analyzer-profile span {
+  color: #00e5ff;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.analyzer-profile strong {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.analyzer-check-card h3,
+.result-box h3,
+.recommendations h3 {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* DOCUMENT CHECKLIST */
+
+.document-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0 25px;
+}
+
+.document-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px;
+  background: #100e18;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 9px;
+  color: #c5bed2;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.document-option:hover {
+  border-color: #a855f7;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.12);
+}
+
+.document-option input {
+  accent-color: #a855f7;
+}
+
+/* ANALYZE BUTTON */
+
+.analyze-button {
+  background: linear-gradient(110deg, #8b35e8, #c026d3);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  padding: 13px 21px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+  transition: all 0.2s ease;
+}
+
+.analyze-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(192, 38, 211, 0.3);
+}
+
+/* ANALYSIS SCORE */
+
+.result-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.result-heading h2 {
+  color: #ffffff;
+}
+
+.score-circle {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background: rgba(0, 229, 255, 0.08);
+  border: 5px solid rgba(0, 229, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.score-circle strong {
+  color: #00e5ff;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.score-circle span {
+  color: #aaa3bb;
+  font-size: 10px;
+}
+
+/* RESULTS */
+
+.result-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.result-box {
+  background: #100e18;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 11px;
+  padding: 18px;
+}
+
+.result-box h3 {
+  margin-top: 0;
+}
+
+.missing-item {
+  color: #ffad79;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.missing-item span {
+  color: #ffad79;
+  font-weight: bold;
+}
+
+.success-item {
+  color: #39ff9c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* RECOMMENDATIONS */
+
+.recommendations {
+  background: rgba(0, 229, 255, 0.06);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 11px;
+  padding: 19px;
+  margin-top: 18px;
+}
+
+.recommendations h3 {
+  color: #00e5ff;
+  margin-top: 0;
+}
+
+.recommendations ul {
+  padding-left: 20px;
+  color: #c5bed2;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+/* DISCLAIMER */
+
+.demo-disclaimer {
+  color: #827b91;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+  .result-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .analyzer-header h1 {
+    font-size: 25px;
+  }
+
+  .analyzer-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .analyzer-job-card,
+  .analyzer-check-card,
+  .analysis-results {
+    padding: 18px;
+  }
+
+  .score-circle {
+    width: 85px;
+    height: 85px;
+  }
+
+  .result-heading {
+    align-items: flex-start;
+  }
+}
+
+
+/* Dark neon opportunity dropdown */
+
+.analyzer-select {
+  width: 100%;
+  max-width: 520px;
+  padding: 13px 42px 13px 15px;
+  margin: 14px 0;
+  background-color: #171322 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(168, 85, 247, 0.55);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  color-scheme: dark;
+  transition: all 0.2s ease;
+}
+
+.analyzer-select:hover {
+  border-color: #00e5ff;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.12);
+}
+
+.analyzer-select:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.analyzer-select option {
+  background-color: #171322;
+  color: #ffffff;
+  padding: 12px;
+}
